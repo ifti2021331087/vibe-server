@@ -163,7 +163,7 @@ async function run() {
         res.send(allUser);
       }
     })
-    app.get('/users/hr', verifyToken,verifyHR,async (req, res) => {
+    app.get('/users/hr', verifyToken,async (req, res) => {
       const email = req.query.email;
       const filter = { email: email };
       const user = await userCollection.findOne(filter);
@@ -173,7 +173,7 @@ async function run() {
       }
       res.send({ hr });
     })
-    app.get('/users/admin',verifyToken,verifyAdmin, async (req, res) => {
+    app.get('/users/admin',verifyToken,async (req, res) => {
       const email = req.query.email;
       const filter = { email: email };
       const user = await userCollection.findOne(filter);
