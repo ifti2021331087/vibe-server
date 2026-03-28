@@ -13,7 +13,8 @@ app.use(cors({
     // 'http://localhost:5173',
     // 'http://localhost:5174',
     'https://vibe-dffa6.web.app',
-    'https://vibe-server-six.vercel.app'
+    // 'https://vibe-server-six.vercel.app'
+    'https://vibe-server-ashy.vercel.app'
   ],
   credentials: true,
   methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"]
